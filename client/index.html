@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html ng-app="todo">
+<head>
+    <meta charset="utf-8" />
+    <title>Todo lists - Angular.js</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/autofill-event.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav role="navigation" class="navbar navbar-default">
+           <div class="navbar-header">
+               <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+               <a href="#" class="navbar-brand">delwiv labs</a>
+           </div>
+           <div id="navbarCollapse" class="collapse navbar-collapse">
+               <ul class="nav navbar-nav">
+                   <li class="active"><a href="#">Todo list manager</a></li>
+                   <li><a href="#">About</a></li>
+               </ul>
+               <ul class="nav navbar-nav navbar-right">
+                   <li><a href="#">Login</a></li>
+               </ul>
+           </div>
+       </nav>
+
+
+
+       <div class="row" ng-controller="TodoListController as listCtrl">
+        <div class="options col-md-3">
+            <h2>Options</h2>
+            <hr>
+            <label class="">Order lists by</label>
+            <ul>
+                <li><input type="radio" 
+                    value="created"
+                    ng-model="listCtrl.options.displayListOrder"
+                    ng-change="listCtrl.updateDisplay()"/> Date created</li>
+
+                    <li><input type="radio"
+                        value="modified"
+                        ng-model="listCtrl.options.displayListOrder"
+                        ng-change="listCtrl.updateDisplay()" /> Date modified</li>
+
+                        <li><input type="checkbox"
+                            ng-change="listCtrl.updateDisplay()"
+                            ng-model="listCtrl.options.displayListInvert"/> Invert</li>
+                        </ul>
+                        <label>Order items by</label>
+                        <ul>
+                            <li><input type="radio" 
+                                ng-model="listCtrl.options.displayTodosOrder"
+                                value="created"
+                                ng-change="listCtrl.updateDisplay()"/> 
+                                Date created</li>
+
+                                <li><input type="radio"
+                                 ng-model="listCtrl.options.displayTodosOrder"
+                                 value="modified"
+                                 ng-change="listCtrl.updateDisplay()"/>
+                                 Date modified</li>
+
+                                 <li><input type="checkbox"
+                                     ng-model="listCtrl.options.displayTodosInvert"
+                                     ng-change="listCtrl.updateDisplay()"/> 
+                                     Invert</li>
+                                 </ul>
+
+                                 <label>Misc</label>
+                                 <ul>
+                                    <li><input type="checkbox"
+                                        ng-model="listCtrl.options.displayCheckedTodos"
+                                        ng-change="listCtrl.updateDisplay()"/> Display checked items</li>
+                                    </ul>   
+
+                                </div>
+                                <div class="col-md-9">
+
+                                    <h1>Todo list manager</h1>
+
+                                    <p ng-hide="listCtrl.todoLists.length">You have no todo list yet, add one!</p>
+
+                                    <form ng-submit="listCtrl.createList()">
+                                        <input type="text" ng-model="listCtrl.todoList.title"/>
+                                        <input type="submit" value="Add a list"/>
+                                    </form>
+
+                                    <div ng-show="listCtrl.todoLists.length">
+
+                                        <h3>Existing todo lists</h3>
+
+                                    </div>
+
+                                    <div class="todoList well" ng-repeat="todoList in listCtrl.todoLists">
+
+                                        <form class="well" ng-submit="listCtrl.updateList(todoList)">
+
+
+                                            <img href="#" title="Remove that list!" class="icon pull-right" src="img/icon_close.png" ng-click="listCtrl.removeList(todoList)">
+                                            <img href="#" title="Empty that list!" class="icon pull-right" src="img/icon_empty.png" ng-click="listCtrl.emptyList(todoList)">
+                                            <strong>
+                                                <input title="Change title, press enter to submit new title" ng-model="listCtrl.todoLists[$index].title" type="text"/>
+                                            </strong>
+                                        </form>
+
+                                        <div class="todo" ng-repeat="todo in todoList.todos">
+                                            <form ng-submit="listCtrl.updateTodo(todo)">
+                                                <input ng-model="listCtrl.todoLists[$parent.$index].todos[$index].done" type="checkbox" ng-checked="todo.done" class="todo"/>
+                                                <input ng-model="listCtrl.todoLists[$parent.$index].todos[$index].text" type="text"/>
+                                            </form>
+                                        </div>
+                                        <form ng-submit="listCtrl.addTodo(todoList)">
+                                            <input type="text" ng-model="listCtrl.todoLists[$index].newTodo.text" 
+                                            placeholder="Add a todo item"/>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </body>
+                    </html>

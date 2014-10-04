@@ -1,0 +1,153 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 warn package.json todo-api@0.0.0 No description
+5 warn package.json todo-api@0.0.0 No repository field.
+6 warn package.json todo-api@0.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ '/home/delwiv/projects/todo-api',
+8 verbose install   [ 'compression',
+8 verbose install     'errorhandler',
+8 verbose install     'loopback',
+8 verbose install     'loopback-boot',
+8 verbose install     'loopback-datasource-juggler',
+8 verbose install     'serve-favicon',
+8 verbose install     'loopback-explorer' ] ]
+9 info preinstall todo-api@0.0.0
+10 verbose readDependencies using package.json deps
+11 verbose already installed skipping compression@^1.0.3 /home/delwiv/projects/todo-api
+12 verbose already installed skipping errorhandler@^1.1.1 /home/delwiv/projects/todo-api
+13 verbose already installed skipping loopback@^2.0.0 /home/delwiv/projects/todo-api
+14 verbose already installed skipping loopback-boot@^2.0.0 /home/delwiv/projects/todo-api
+15 verbose already installed skipping loopback-datasource-juggler@^2.9.0 /home/delwiv/projects/todo-api
+16 verbose already installed skipping serve-favicon@^2.0.1 /home/delwiv/projects/todo-api
+17 verbose already installed skipping loopback-explorer@^1.1.0 /home/delwiv/projects/todo-api
+18 silly resolved []
+19 info build /home/delwiv/projects/todo-api
+20 verbose linkStuff [ false, false, false, '/home/delwiv/projects' ]
+21 info linkStuff todo-api@0.0.0
+22 verbose linkBins todo-api@0.0.0
+23 verbose linkMans todo-api@0.0.0
+24 verbose rebuildBundles todo-api@0.0.0
+25 verbose rebuildBundles [ '.bin',
+25 verbose rebuildBundles   'compression',
+25 verbose rebuildBundles   'errorhandler',
+25 verbose rebuildBundles   'loopback',
+25 verbose rebuildBundles   'loopback-boot',
+25 verbose rebuildBundles   'loopback-connector-mongodb',
+25 verbose rebuildBundles   'loopback-datasource-juggler',
+25 verbose rebuildBundles   'loopback-explorer',
+25 verbose rebuildBundles   'serve-favicon',
+25 verbose rebuildBundles   'strongloop' ]
+26 verbose rebuild bundle /home/delwiv/projects/todo-api/node_modules/loopback-connector-mongodb
+27 info build /home/delwiv/projects/todo-api/node_modules/loopback-connector-mongodb
+28 info preinstall loopback-connector-mongodb@1.4.4
+29 verbose linkStuff [ false,
+29 verbose linkStuff   false,
+29 verbose linkStuff   false,
+29 verbose linkStuff   '/home/delwiv/projects/todo-api/node_modules' ]
+30 info linkStuff loopback-connector-mongodb@1.4.4
+31 verbose linkBins loopback-connector-mongodb@1.4.4
+32 verbose linkMans loopback-connector-mongodb@1.4.4
+33 verbose rebuildBundles loopback-connector-mongodb@1.4.4
+34 verbose rebuildBundles [ 'async', 'debug', 'loopback-connector', 'mongodb' ]
+35 info install loopback-connector-mongodb@1.4.4
+36 info postinstall loopback-connector-mongodb@1.4.4
+37 verbose rebuild bundle /home/delwiv/projects/todo-api/node_modules/strongloop
+38 info build /home/delwiv/projects/todo-api/node_modules/strongloop
+39 info preinstall strongloop@2.9.2
+40 verbose linkStuff [ false,
+40 verbose linkStuff   false,
+40 verbose linkStuff   false,
+40 verbose linkStuff   '/home/delwiv/projects/todo-api/node_modules' ]
+41 info linkStuff strongloop@2.9.2
+42 verbose linkBins strongloop@2.9.2
+43 verbose link bins [ { slc: './bin/slc',
+43 verbose link bins     'lb-ng': './node_modules/loopback-sdk-angular-cli/bin/lb-ng',
+43 verbose link bins     'lb-ng-doc': './node_modules/loopback-sdk-angular-cli/bin/lb-ng-doc' },
+43 verbose link bins   '/home/delwiv/projects/todo-api/node_modules/.bin',
+43 verbose link bins   false ]
+44 verbose linkMans strongloop@2.9.2
+45 verbose rebuildBundles strongloop@2.9.2
+46 verbose rebuildBundles [ '.bin',
+46 verbose rebuildBundles   'async',
+46 verbose rebuildBundles   'colors',
+46 verbose rebuildBundles   'cpr',
+46 verbose rebuildBundles   'debug',
+46 verbose rebuildBundles   'fs.extra',
+46 verbose rebuildBundles   'generator-loopback',
+46 verbose rebuildBundles   'inflection',
+46 verbose rebuildBundles   'ini',
+46 verbose rebuildBundles   'is2',
+46 verbose rebuildBundles   'json-file-plus',
+46 verbose rebuildBundles   'loopback-sdk-angular-cli',
+46 verbose rebuildBundles   'loopback-workspace',
+46 verbose rebuildBundles   'mkdirp',
+46 verbose rebuildBundles   'node-inspector',
+46 verbose rebuildBundles   'nodefly-register',
+46 verbose rebuildBundles   'nopt',
+46 verbose rebuildBundles   'npm',
+46 verbose rebuildBundles   'optimist',
+46 verbose rebuildBundles   'prompt',
+46 verbose rebuildBundles   'read',
+46 verbose rebuildBundles   'strong-agent',
+46 verbose rebuildBundles   'strong-build',
+46 verbose rebuildBundles   'strong-deploy',
+46 verbose rebuildBundles   'strong-pm',
+46 verbose rebuildBundles   'strong-registry',
+46 verbose rebuildBundles   'strong-supervisor',
+46 verbose rebuildBundles   'which' ]
+47 verbose rebuild bundle /home/delwiv/projects/todo-api/node_modules/strongloop/node_modules/nodefly-register
+48 info build /home/delwiv/projects/todo-api/node_modules/strongloop/node_modules/nodefly-register
+49 info preinstall nodefly-register@0.3.3
+50 verbose linkStuff [ false,
+50 verbose linkStuff   false,
+50 verbose linkStuff   false,
+50 verbose linkStuff   '/home/delwiv/projects/todo-api/node_modules/strongloop/node_modules' ]
+51 info linkStuff nodefly-register@0.3.3
+52 verbose linkBins nodefly-register@0.3.3
+53 verbose linkMans nodefly-register@0.3.3
+54 verbose rebuildBundles nodefly-register@0.3.3
+55 verbose rebuildBundles [ 'request' ]
+56 verbose rebuild bundle /home/delwiv/projects/todo-api/node_modules/strongloop/node_modules/nodefly-register/node_modules/request
+57 info build /home/delwiv/projects/todo-api/node_modules/strongloop/node_modules/nodefly-register/node_modules/request
+58 info preinstall request@2.21.0
+59 verbose linkStuff [ false,
+59 verbose linkStuff   false,
+59 verbose linkStuff   false,
+59 verbose linkStuff   '/home/delwiv/projects/todo-api/node_modules/strongloop/node_modules/nodefly-register/node_modules' ]
+60 info linkStuff request@2.21.0
+61 verbose linkBins request@2.21.0
+62 verbose linkMans request@2.21.0
+63 verbose rebuildBundles request@2.21.0
+64 verbose rebuildBundles [ 'aws-sign',
+64 verbose rebuildBundles   'cookie-jar',
+64 verbose rebuildBundles   'forever-agent',
+64 verbose rebuildBundles   'form-data',
+64 verbose rebuildBundles   'hawk',
+64 verbose rebuildBundles   'http-signature',
+64 verbose rebuildBundles   'json-stringify-safe',
+64 verbose rebuildBundles   'mime',
+64 verbose rebuildBundles   'node-uuid',
+64 verbose rebuildBundles   'oauth-sign',
+64 verbose rebuildBundles   'qs',
+64 verbose rebuildBundles   'tunnel-agent' ]
+65 info install request@2.21.0
+66 info postinstall request@2.21.0
+67 info install nodefly-register@0.3.3
+68 info postinstall nodefly-register@0.3.3
+69 info install strongloop@2.9.2
+70 info postinstall strongloop@2.9.2
+71 info install todo-api@0.0.0
+72 info postinstall todo-api@0.0.0
+73 info prepublish todo-api@0.0.0
+74 error peerinvalid The package loopback does not satisfy its siblings' peerDependencies requirements!
+74 error peerinvalid Peer loopback-explorer@1.1.0 wants loopback@1.x >=1.5
+75 error System Linux 2.6.32-042stab092.3
+76 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+77 error cwd /home/delwiv/projects/todo-api
+78 error node -v v0.10.32
+79 error npm -v 1.4.28
+80 error code EPEERINVALID
+81 verbose exit [ 1, true ]

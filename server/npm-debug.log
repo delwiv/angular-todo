@@ -1,0 +1,88 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'stronglop' ]
+2 info using npm@1.4.28
+3 info using node@v0.13.0-pre
+4 warn package.json todo-api@0.0.0 No description
+5 warn package.json todo-api@0.0.0 No repository field.
+6 warn package.json todo-api@0.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'stronglop', null ]
+9 verbose cache add name=undefined spec="stronglop" args=["stronglop",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'stronglop',
+10 verbose parsed url   path: 'stronglop',
+10 verbose parsed url   href: 'stronglop' }
+11 silly lockFile 56f208e1-stronglop stronglop
+12 verbose lock stronglop /home/delwiv/.npm/56f208e1-stronglop.lock
+13 silly lockFile 56f208e1-stronglop stronglop
+14 silly lockFile 56f208e1-stronglop stronglop
+15 verbose addNamed [ 'stronglop', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 577c40fb-stronglop stronglop@
+18 verbose lock stronglop@ /home/delwiv/.npm/577c40fb-stronglop.lock
+19 silly addNameRange { name: 'stronglop', range: '*', hasData: false }
+20 verbose request where is /stronglop
+21 verbose request registry https://registry.npmjs.org/
+22 verbose request id 056c7944f937cc4a
+23 verbose url raw /stronglop
+24 verbose url resolving [ 'https://registry.npmjs.org/', './stronglop' ]
+25 verbose url resolved https://registry.npmjs.org/stronglop
+26 verbose request where is https://registry.npmjs.org/stronglop
+27 info trying registry request attempt 1 at 19:50:46
+28 http GET https://registry.npmjs.org/stronglop
+29 http 404 https://registry.npmjs.org/stronglop
+30 verbose headers { date: 'Thu, 02 Oct 2014 17:50:47 GMT',
+30 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+30 verbose headers   'content-type': 'application/json',
+30 verbose headers   'cache-control': 'max-age=0',
+30 verbose headers   'content-length': '52',
+30 verbose headers   'accept-ranges': 'bytes',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   age: '0',
+30 verbose headers   'x-served-by': 'cache-lcy1133-LCY',
+30 verbose headers   'x-cache': 'MISS',
+30 verbose headers   'x-cache-hits': '0',
+30 verbose headers   'x-timer': 'S1412272246.526464,VS0,VE640',
+30 verbose headers   connection: 'close' }
+31 silly registry.get cb [ 404,
+31 silly registry.get   { date: 'Thu, 02 Oct 2014 17:50:47 GMT',
+31 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 silly registry.get     'content-type': 'application/json',
+31 silly registry.get     'cache-control': 'max-age=0',
+31 silly registry.get     'content-length': '52',
+31 silly registry.get     'accept-ranges': 'bytes',
+31 silly registry.get     via: '1.1 varnish',
+31 silly registry.get     age: '0',
+31 silly registry.get     'x-served-by': 'cache-lcy1133-LCY',
+31 silly registry.get     'x-cache': 'MISS',
+31 silly registry.get     'x-cache-hits': '0',
+31 silly registry.get     'x-timer': 'S1412272246.526464,VS0,VE640',
+31 silly registry.get     connection: 'close' } ]
+32 silly lockFile 577c40fb-stronglop stronglop@
+33 silly lockFile 577c40fb-stronglop stronglop@
+34 error 404 404 Not Found: stronglop
+34 error 404
+34 error 404 'stronglop' is not in the npm registry.
+34 error 404 You should bug the author to publish it
+34 error 404 It was specified as a dependency of 'todo-api'
+34 error 404
+34 error 404 Note that you can also install from a
+34 error 404 tarball, folder, or http url, or git url.
+35 error System Linux 2.6.32-042stab092.3
+36 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "stronglop"
+37 error cwd /home/delwiv/projects/todo-api/server
+38 error node -v v0.13.0-pre
+39 error npm -v 1.4.28
+40 error code E404
+41 verbose exit [ 1, true ]
